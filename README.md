@@ -1,0 +1,1 @@
+<!-- On our GitHub repository, navigate to “Pages” menu inside “Settings” tab. Set build and deployment source to “GitHub Actions”. This way, whenever we push our commit to github, it automatically runs the build command in deploy.yml and creates the index.html and 404.html before it then deploys the site too https://{username}.github.io/{repo_name} -->
