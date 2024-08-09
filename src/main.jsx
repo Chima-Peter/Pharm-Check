@@ -10,11 +10,11 @@ const BaseContext = createContext<Context>('/Pharm-Check/')
 
 // Check to see if we're running in dev or prod mode and set base name to equally point to correct enum value
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BaseContext.Provider value={import.meta.env.DEV ? '/' : '/Pharm-Check/'}>
-      <React.StrictMode>
+   <React.StrictMode>
+      <BaseContext.Provider value={import.meta.env.DEV ? '/' : '/Pharm-Check/'}>
          <App />
-      </React.StrictMode>
-  </BaseContext.Provider>
+      </BaseContext.Provider>
+   </React.StrictMode>
 )
 
 const useBaseContext = () => useContext(BaseContext)
